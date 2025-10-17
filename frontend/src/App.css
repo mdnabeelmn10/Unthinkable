@@ -1,0 +1,811 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f8fa;
+  color: #111;
+}
+
+.container {
+  max-width: 760px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+  margin: 0 0 12px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #f9fafb;
+}
+
+.error {
+  margin-top: 12px;
+  color: #b91c1c;
+}
+
+.foot {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #666;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+  color: #1f2937;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 16px;
+  color: #b91c1c;
+  font-weight: 500;
+  text-align: center;
+}
+
+.result {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9fafb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.result h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+.result ul, .result ol {
+  padding-left: 20px;
+}
+
+.condition-bar {
+  height: 10px;
+  border-radius: 6px;
+  background: #e0e7ff;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.condition-bar-fill {
+  height: 100%;
+  background: #4f46e5;
+  text-align: right;
+  padding-right: 5px;
+  color: #fff;
+  font-size: 10px;
+  border-radius: 6px;
+}
+
+.foot {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+}
+/* Global body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f8fa;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 24px;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin: 0 0 12px 0;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+/* Form elements */
+textarea, input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Result list */
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* Disclaimer */
+.disclaimer {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffeeba;
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Query History */
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  margin-bottom: 10px;
+}
+
+.history-item span {
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.history-item button {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.history-item button.view {
+  background-color: #2563eb;
+  color: white;
+  margin-right: 6px;
+}
+
+.history-item button.delete {
+  background-color: #dc2626;
+  color: white;
+}
+
+/* Global body */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+}
+
+/* Cards */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  margin-bottom: 24px;
+}
+
+/* Headings */
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Form layout */
+form {
+  display: grid;
+  gap: 16px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Input, textarea, select */
+input, textarea, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  outline: none;
+}
+
+/* Two-column layout for optional fields */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+/* Buttons */
+button {
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Spinner inside button */
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Results card */
+.result-card {
+  margin-top: 16px;
+}
+
+.result-card ul, .result-card ol {
+  padding-left: 20px;
+}
+
+.result-card li {
+  margin-bottom: 6px;
+}
+
+/* Disclaimer box */
+.disclaimer {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffeeba;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* Query history */
+.history-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 12px;
+}
+
+.history-card span {
+  flex: 1;
+  margin-right: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.history-card button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.history-card button.view {
+  background-color: #2563eb;
+  color: white;
+  margin-right: 6px;
+}
+
+.history-card button.delete {
+  background-color: #dc2626;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Global Styles */
+body {
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #e8f3ff, #f0fff4);
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0077b6;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+h2 {
+  color: #023e8a;
+  margin-top: 30px;
+  border-left: 5px solid #0077b6;
+  padding-left: 10px;
+}
+
+/* Card Styles */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+.form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form textarea,
+.form input,
+.form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form textarea:focus,
+.form input:focus,
+.form select:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #0096c7;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #0077b6;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 8px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Results Display */
+.result-card h2 {
+  color: #0077b6;
+}
+
+.result-card ul,
+.result-card ol {
+  margin-left: 20px;
+}
+
+.result-card li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.disclaimer {
+  background: #fff8e1;
+  border-left: 5px solid #f4a261;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Query History */
+.history-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fcff;
+  border: 1px solid #cce5ff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.history-card:hover {
+  background: #e9f5ff;
+}
+
+.history-card span {
+  flex: 1;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.history-card button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+button.view {
+  background: #2a9d8f;
+}
+
+button.view:hover {
+  background: #219080;
+}
+
+button.delete {
+  background: #e63946;
+}
+
+button.delete:hover {
+  background: #c5303d;
+}
+
+/* Clear button */
+button.clear {
+  background: #f4a261;
+  margin-bottom: 12px;
+}
+
+button.clear:hover {
+  background: #e67e22;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+.txt{
+  margin-right: 10px;
+}
+.symp{
+  margin-right: 10px;
+
+}
+
+/* Compact Grid Layout */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* Field Wrapper (smaller, flatter look) */
+.grid-2 div {
+  background: #f7fbff;
+  border: 1px solid #d7e9ff;
+  border-radius: 6px;
+  padding: 8px 10px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.grid-2 div:hover {
+  background: #eef6ff;
+  border-color: #bcdfff;
+}
+
+/* Labels */
+.grid-2 label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #004e89;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Inputs and Selects (smaller, neater) */
+.grid-2 input,
+.grid-2 select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #c8defd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.grid-2 input:focus,
+.grid-2 select:focus {
+  outline: none;
+  border-color: #0077b6;
+  box-shadow: 0 0 0 2px rgba(0, 119, 182, 0.15);
+}
+
+.grid-2 select option:first-child {
+  color: #777;
+}
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  .grid-2 {
+    gap: 10px;
+  }
+}
